@@ -14,7 +14,7 @@ $email = "fake@gmail.com";
 
 $age = 21;
 $users = 2;
-$quantity = 3;
+$quantity = 4;
 
 //  float
 
@@ -27,6 +27,8 @@ $tax_rate = 5.1;
 $employed = true;
 $online = false;
 $for_sale = true;
+
+$total = null;
 
 echo "Hello {$name}<br>";
 echo "You like {$food}<br>";
@@ -43,5 +45,10 @@ echo "The sales tax rate is: \$ {$tax_rate}%<br>";
 
 echo "Online Satus: {$online}<br>";
 echo "Employment Satus: {$employed}<br>";
+
+
+echo "You have ordered {$quantity} x {$food}s";
+$total = $quantity * $price;
+echo "Your total is \$ {$total}";
 
 ?>
